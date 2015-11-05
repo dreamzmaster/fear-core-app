@@ -1,0 +1,143 @@
+/** --------
+hub: menu-pattern
+-------- **/
+
+.header__pattern-nav-container {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.menu-pattern {
+
+  @include rem(margin, 1px 10px 20px 10px);
+  @include rem(max-width, 300px);
+
+  position: absolute;
+  user-select: none;
+  z-index: $z-overlay;
+
+  .icon--menu {
+    background: $color__brand--white;
+    cursor: pointer;
+    display: table-cell;
+    height: 46px;
+    left: 0;
+    position: relative;
+    text-align: center;
+    top: -1px;
+    vertical-align: middle;
+    width: 46px;
+
+    &:before {
+      @include font-icons('menu');
+    }
+  }
+
+  .menu-active {
+    background: $color__brand--grey-20;
+  }
+
+
+  .animate-show {
+    display: block !important;
+    opacity: 1;
+    transition: opacity linear .8s;
+
+    &.ng-hide {
+      cursor: default;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity linear .8s;
+    }
+  }
+
+  h2 {
+    @include rem(font-size, 18px);
+    @include rem(padding-right, 15px);
+    font-family: $font__helvetica--roman;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    @include rem(font-size, 16px);
+    color: $color__brand--medium-grey;
+    font-family: $font__helvetica--roman;
+    text-transform: capitalize;
+  }
+
+}
+
+
+.menu-pattern__menu-item-container {
+  @include rem(font-size, 18px);
+  @include rem(text-indent, 15px);
+  background: $color__brand--grey-20;
+  color: $color__brand--black;
+  display: block;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.menu-pattern__list,
+.menu-pattern__list-item {
+  margin: 0;
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+
+    a {
+      @include rem(text-indent, 15px);
+      @include rem(padding, 5px 0);
+    }
+
+    h3 {
+      @include rem(text-indent, 15px);
+      margin: 10px 0;
+    }
+  }
+
+  a {
+    @include rem(font-size, 14px);
+    display: block;
+    font-family: $font__helvetica--light;
+    text-decoration: none;
+    width: 100%;
+  }
+
+}
+
+.menu-pattern__list--level1 {
+  padding: 0;
+
+  h2 {
+    display: block;
+    margin: 15px 0;
+  }
+}
+
+.menu-pattern__list-item--level2 {
+  @include rem(margin-top, 50px);
+
+  &:hover .menu-pattern__list-item--level3 {
+    cursor: pointer;
+    display: block;
+  }
+}
+
+.menu-pattern__list-item--level3 {
+  padding: 0;
+
+  li {
+    @include rem(padding, 5px 0);
+    a:hover {
+      background: $color__brand--dark-grey;
+      color: $color__brand--background-grey;
+    }
+  }
+
+}
+
+

@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie ie7 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie ie8 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+    {{{> views/default/modules/head/genericTop}}}
+    {{{> ../core/views/default/modules/head/hub}}}
+    {{{> views/default/modules/head/genericBottom}}}
+</head>
+
+<body>
+
+<div id="breakpointIndex" mns-breakpoint></div>
+
+<div class="site-wrapper">
+    <div class="site-wrapper__inner">
+
+        {{> ../core/views/default/pages/hub/header}}
+
+        <div class="content">
+            <div class="content__inner">
+
+                <div class="col--span-xs-12 col--span-sm-8 col--span-md-9 col--add-gutter-left">
+
+                    <div>
+                        <h1>Buttons</h1>
+                    </div>
+
+                    <div class="button-section">
+                        <div class="button-section__row">
+                            <div>
+                                <input type="button" value="primary button" class="btn btn—-primary" />
+                            </div>
+                            <hr>
+                            <div class="button-section__codeblock">
+                                <code>&#60;section&#62; <br> position: relative;</code>
+                                <div>
+                                    <code>&#60;div class="offset"&#62; <br> position: absolute;  <br> right: 20px; <br> top: 20px;</code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-section__row">
+                            <div>
+                                <button class="btn btn—-primary">primary button</button>
+                            </div>
+                            <hr>
+                            <div class="button-section__codeblock">
+                                <code>
+                                    &#60;section&#62;
+                                    <br> position: relative;
+                                </code>
+                                <div>
+                                    <code>&#60;div class="offset"&#62;
+                                        <br> position: absolute;
+                                        <br> right: 20px;
+                                        <br> top: 20px;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-section__row">
+                            <div>
+                                <input type="button" value="secondary button" class="btn btn—-secondary" />
+                            </div>
+                            <hr>
+                            <div class="button-section__codeblock">
+
+                              <code>&#60;section&#62; <br> position: relative;</code>
+
+                              <div>
+                                <code>&#60;div class="offset"&#62; <br> position: absolute;  <br> right: 20px; <br> top: 20px;</code>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="button-section__row">
+                            <div>
+                                <button class="btn btn—-secondary">seondary button</button>
+                            </div>
+                            <hr>
+                            <div class="button-section__codeblock">
+                                <code>
+                                    &#60;section&#62;
+                                    <br> position: relative;
+                                </code>
+                                <div>
+                                    <code>&#60;div class="offset"&#62;
+                                        <br> position: absolute;
+                                        <br> right: 20px;
+                                        <br> top: 20px;
+                                    </code>
+                                </div>
+                            </div>
+                        </div><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        {{{> ../core/views/default/pages/hub/footer}}}
+
+    </div> <!-- site-wrapper__inner -->
+</div> <!-- site-wrapper -->
+
+{{{> views/default/modules/bootstrap}}}
+
+{{{> ../core/views/default/pages/hub/bootstrap}}}
+
+{{{> views/default/modules/scripts}}}
+
+</body>
+</html>

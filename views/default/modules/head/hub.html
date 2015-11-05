@@ -1,0 +1,20 @@
+<!-- Critical fonts -->
+{{{> views/default/modules/head/genericFonts}}}
+
+<!-- Load default CSS for modern browsers, ie9+ and mobile IE browsers -->
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+<link rel="stylesheet" href="../../../../css/layout/pages/hub/critical.css" inline> <!-- Inline critical CSS for faster page rendering -->
+<link rel="stylesheet" href="{{config.cssLocation}}css/layout/pages/hub/non-critical.css">
+<!--<![endif]-->
+
+<!-- Load CSS and JS for IE8 and below -->
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="{{config.cssLocation}}css/layout/pages/hub/ie8.css">
+<![endif]-->
+
+<!-- build:remove -->
+<link rel="stylesheet" href="../../../css/layout/pages/hub/critical.css">
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="../../../css/layout/pages/hub/ie8.css">
+<![endif]-->
+<!-- /build -->

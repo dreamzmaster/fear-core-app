@@ -1,0 +1,383 @@
+/* --------
+  M&S font icons
+  -------- */
+/* -------- Icons -------- */
+@include create-icon('email', 'icon-email');
+// Email icon
+@include create-icon('pintrest', 'icon-pintrest');
+// Pintrest
+@include create-icon('mobile', 'icon-mobile');
+// Mobile
+@include create-icon('googleplus', 'icon-googleplus');
+// Google Plus
+@include create-icon('facebook', 'icon-facebook');
+// Facebook
+@include create-icon('instagram', 'icon-instagram');
+// Instagram
+@include create-icon('twitter', 'icon-twitter');
+// Twitter
+@include create-icon('youtube', 'icon-youtube');
+// Youtube
+@include create-icon('edit', 'icon-arrow-heavy');
+// Arrow
+@include create-icon('arrow-light', 'icon-arrow-light');
+// Arrow thin
+@include create-icon('tick', 'icon-tick');
+// Tick
+@include create-icon('tooltip-info', 'icon-information');
+// Tick
+@include create-icon('information', 'icon-information');
+// Success / Confirmation icon
+@include create-icon('confirmation', 'icon-confirmation');
+@include create-icon('success', 'icon-success');
+// Error icon
+@include create-icon('error', 'icon-error');
+// Tick icon
+@include create-icon('close', 'icon-close');
+// Close icon
+@include create-icon('bag', 'icon-bag');
+// Checkout - Bag
+@include create-icon('gift', 'icon-gift');
+// Checkout - Gift icon
+@include create-icon('delivery-sdd', 'icon-truck');
+// Checkout - Truck
+@include create-icon('delivery-ndd', 'icon-truck');
+// Checkout - Truck
+@include create-icon('delivery-international', 'icon-truck');
+// Checkout - Truck
+@include create-icon('delivery-expressinternational', 'icon-truck');
+// Checkout - Truck
+@include create-icon('delivery-store', 'icon-store');
+// Checkout - Store
+@include create-icon('disposal', 'icon-service');
+// Checkout - Removal / Disposal
+@include create-icon('my-account', 'icon-my-account');
+// bu toolbar : my account icon
+@include create-icon('logo', 'icon-logo-est');
+// logo
+@include create-icon('fave', 'icon-fave');
+// Header - Heart icon
+@include create-icon('search', 'icon-search');
+// Checkout - Bag
+@include create-icon('menu', 'icon-menu');
+// Checkout - Bag
+@include create-icon('location', 'icon-location');
+// Checkout - Bag
+@include create-icon('checkout', 'icon-checkout');
+// Checkout circle/arrow - Bag
+@include create-icon('fave-plus', 'icon-fave-plus');
+// Navigation on mobile - Saved items / Recently viewed
+@include create-icon('sign-in', 'icon-sign-in');
+// Navigation on mobile - Sign in / Sign out
+@include create-icon('arrow-down', 'icon-arrow-down');
+// Accordion/Menu - Expanded state icon
+@include create-icon('arrow-right', 'icon-arrow-right');
+// Accordion/Menu - Collapsed state icon / Calendar Next Month
+@include create-icon('arrow-left', 'icon-arrow-left');
+// Calendar Prev Month
+@include create-icon('locator-pin', 'icon-locator-pin');
+// Store locator - Map pin - current location - icon
+@include create-icon('arrow-toggle', 'icon-arrow-heavy');
+// Arrow toggle  - L2 navigation toggle - mobile devices
+@include create-icon('toilet', 'icon-toilet');
+// Store facility - toilet:yes
+@include create-icon('no-toilet', 'icon-no-toilet');
+// Store facility - toilet:no
+@include create-icon('car-collect', 'icon-car-collect');
+// Store facility - collect-by-car:yes
+@include create-icon('no-car-collect', 'icon-no-car-collect');
+// Store facility - collect-by-car:no
+@include create-icon('park', 'icon-park');
+// Store facility - parking:yes
+@include create-icon('no-park', 'icon-no-park');
+// Store facility - parking:no
+@include create-icon('baby-chng', 'icon-baby-chng');
+// Store facility - baby-changing:yes
+@include create-icon('no-baby-chng', 'icon-no-baby-chng');
+// Store facility - baby-changing:no
+@include create-icon('print', 'icon-print');
+// Order Confirmation - print - icon
+@include create-icon('sparks', 'icon-sparks');
+// Basket - sparks icon
+@include create-icon('delivery-ed', 'icon-delivery-email');
+// Checkout pages - delivery email icon
+
+/* M&S font icon instructions
+--------------------------------------------------
+To add icons to the mns-icons font, follow the steps below:
+   - inside the FEAR project, go to the /app/assets/fonts/
+   - unzip the file mns-icons.zip
+   - go to https://icomoon.io/app/
+   - click on the hamburger menu
+   - click on New Project
+   - click Import Icons
+   - from the unzipped folder, select file 'selection.json'
+   - click Import Icons
+   - select your new SVG files to add to the font file
+   - make sure all icons are selected
+   - click on Generate Font
+   - rename new icons if necessary
+   - click Download and save .zip file
+   - unzip the newly created file
+   - copy all font files from /mns-icons/fonts/ (eot, svg, ttf, woff) to FEAR folder /app/assets/fonts/
+   - copy-paste the '.icon-.....' css rules from style.css into FEAR folder /sass/components/_icons.scss
+*/
+
+// Pseudo Font Icons fix for IE8
+@if $browser == 'ie8' {
+  .loading-icons {
+    :before,
+    :after { content: ' ' !important; }
+  }
+}
+
+%icon-arrow-heavy:before {
+  content: '\e608';
+}
+
+%icon-calendar:before {
+  content: '\e60a';
+}
+
+%icon-store:before {
+  content: '\e60b';
+}
+
+%icon-truck:before {
+  content: '\e60c';
+}
+
+%icon-edit:before {
+  content: '\e60d';
+}
+
+%icon-gift:before {
+  content: '\e616';
+}
+
+%icon-toilet:before {
+  content: '\e628';
+}
+
+%icon-no-toilet:before {
+  content: '\e629';
+}
+
+%icon-no-car-collect:before {
+  content: '\e62a';
+}
+
+%icon-no-park:before {
+  content: '\e62b';
+}
+
+%icon-no-baby-chng:before {
+  content: '\e62c';
+}
+
+%icon-car-collect:before {
+  content: '\e62d';
+}
+
+%icon-park:before {
+  content: '\e62e';
+}
+
+%icon-baby-chng:before {
+  content: '\e62f';
+}
+
+%icon-arrow-left:before {
+  content: '\e630';
+}
+
+%icon-arrow-down:before {
+  content: '\e625';
+}
+
+%icon-arrow-right:before {
+  content: '\e626';
+}
+
+%icon-locator-pin:before {
+  content: '\e627';
+}
+
+%icon-email:before {
+  content: '\e61b';
+}
+
+%icon-facebook:before {
+  content: '\e61c';
+}
+
+%icon-googleplus:before {
+  content: '\e61d';
+}
+
+%icon-instagram:before {
+  content: '\e61e';
+}
+
+%icon-pintrest:before {
+  content: '\e61f';
+}
+
+%icon-mobile:before {
+  content: '\e620';
+}
+
+%icon-twitter:before {
+  content: '\e621';
+}
+
+%icon-youtube:before {
+  content: '\e622';
+}
+
+%icon-checkout:before {
+  content: '\e614';
+}
+
+%icon-fave:before {
+  content: '\e615';
+}
+
+%icon-my-account:before {
+  content: '\e610';
+}
+
+%icon-arrow-light:before {
+  content: '\e60f';
+}
+
+%icon-service:before {
+  content: '\e60e';
+}
+
+%icon-tick:before {
+  content: '\e609';
+}
+
+%icon-bag:before {
+  content: '\e607';
+}
+
+%icon-close:before {
+  content: '\e603';
+}
+
+%icon-confirmation:before,
+%icon-success:before {
+  content: '\e604';
+}
+
+%icon-error:before {
+  content: '\e605';
+}
+
+%icon-information:before {
+  content: '\e606';
+}
+
+%icon-logo:before {
+  content: '\e600';
+}
+
+%icon-logo-est:before {
+  content: '\e601';
+}
+
+%icon-logo-only:before {
+  content: '\e602';
+}
+
+%icon-location:before {
+  content: '\e613';
+}
+
+%icon-menu:before {
+  content: '\e611';
+}
+
+%icon-search:before {
+  content: '\e612';
+}
+
+%icon-checkbox-off:before {
+  content: '\e619';
+}
+
+%icon-checkbox-on:before {
+  content: '\e61a';
+}
+
+%icon-radio-off:before {
+  content: '\e617';
+}
+
+%icon-radio-on:before {
+  content: '\e618';
+}
+
+%icon-fave-plus:before {
+  content: '\e623';
+}
+
+%icon-sign-in:before {
+  content: '\e624';
+}
+
+%icon-cancel-order:before {
+  content: '\e631';
+}
+
+%icon-print:before {
+  content: '\e632';
+}
+
+%icon-sparks:before {
+  content: '\e633';
+}
+
+%icon-delivery-email:before {
+  content: "\e634";
+}
+
+/* -------- Icon elements -------- */
+
+// Overwrite italic font style
+.icon__label { font-style: normal; }
+
+/* -------- Icon modifiers -------- */
+
+// Remove default styling from a button
+.icon--button {
+  background: transparent;
+  border: none;
+}
+
+// Remove default styling from an anchor
+.icon--link {
+  text-decoration: none;
+
+  span {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+  }
+}
+
+.icon,
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: $font__icons;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}

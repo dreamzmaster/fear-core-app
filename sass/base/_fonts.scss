@@ -1,0 +1,26 @@
+/* --------
+  Fonts
+  -------- */
+
+/* -------- Icons -------- */
+
+@include font-face('mns-icons', '../../../assets/fonts/mns-icons', $file-formats: eot woff ttf svg);
+
+/* -------- Typographic -------- */
+
+// Helvetica font declarations
+@include font-face('helvetica-ultra', '../../../assets/fonts/helvetica-ultra-light', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-light', '../../../assets/fonts/helvetica-light', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-roman', '../../../assets/fonts/helvetica-roman', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-medium', '../../../assets/fonts/helvetica-medium', $file-formats: eot woff ttf svg);
+@include font-face('helvetica-bold', '../../../assets/fonts/helvetica-bold', $file-formats: eot woff ttf svg);
+@include font-face('london-semibold', '../../../assets/fonts/MSLondonW03Semibold', $file-formats: eot woff ttf svg);
+@include font-face('london-bold', '../../../assets/fonts/MandSLondonW03Bold', $file-formats: eot woff ttf svg);
+@include font-face('leeds-light', '../../../assets/fonts/MandSLeedsW03Light', $file-formats: eot woff ttf svg);
+
+// Didot font declarations
+@include font-face('didot-roman', '../../../assets/fonts/didot-roman', $file-formats: eot woff ttf svg);
+@include font-face('didot-italic', '../../../assets/fonts/didot-italic', $file-formats: eot woff ttf svg);
+@include font-face('didot-bold', '../../../assets/fonts/didot-bold', $file-formats: eot woff ttf svg);
+@include font-face('didot-bold-italic', '../../../assets/fonts/didot-bold-italic', $file-formats: eot woff ttf svg);
+

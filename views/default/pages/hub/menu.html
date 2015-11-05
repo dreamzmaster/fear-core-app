@@ -1,0 +1,16 @@
+<div class="menu-pattern" ng-cloak ng-controller="MenuCtrl">
+  <i class="icon--menu" ng-click="toggleVisibility()" ng-class="{'menu-active': showing}"></i>
+  <div ng-if="showing" class="menu-pattern__menu-item-container animate-show">
+    <ul class="menu-pattern__list menu-pattern__list--level1" ng-repeat="(section, level1) in menu">
+      <h2 ng-bind="section"></h2>
+      <li class="menu-pattern__list-item menu-pattern__list-item--level2" ng-repeat="(name, level2) in level1">
+        <h3 ng-bind="name"></h3>
+        <ul class="menu-pattern__list-item menu-pattern__list-item--level3">
+          <li ng-repeat="level3 in level2">
+            <a ng-href="{[{level3.url}]}" ng-bind="level3.name"></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

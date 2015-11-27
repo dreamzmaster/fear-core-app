@@ -7,7 +7,7 @@
 
 <head>
     {{{> views/default/modules/head/genericTop}}}
-    {{{> views/default/modules/head/hub}}}
+    {{{> core/views/default/modules/head/hub}}}
     {{{> views/default/modules/head/genericBottom}}}
 </head>
 
@@ -18,18 +18,14 @@
 <div class="site-wrapper">
     <div class="site-wrapper__inner">
 
-        {{{> views/default/modules/richRelevance/richRelevanceConfig | MS_RES_RICHRELEVANCE_MAPPER }}}
+        {{{> core/views/default/pages/hub/content}}}
 
-        {{{> views/default/pages/hub/content}}}
-
-        {{{> views/default/pages/hub/footer}}}
-
-        {{{> views/default/modules/lightbox/overlay}}}
+        {{{> core/views/default/pages/hub/footer}}}
 
     </div> <!-- site-wrapper__inner -->
 </div> <!-- site-wrapper -->
 
-{{{> views/default/pages/hub/bootstrap}}}
+{{{> core/views/default/pages/hub/bootstrap}}}
 
 </body>
 </html>

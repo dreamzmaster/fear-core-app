@@ -5,7 +5,7 @@ define([
     'config',
     'fastclick',
     'lib/utils',
-    'modules/common'
+    'common/scripts/modules/common'
 ], function (angular, config, Fastclick, utils) {
     'use strict';
 

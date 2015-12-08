@@ -2,10 +2,10 @@
 
 define([
     'packages/angular.package',
-    'config',
+    'bandc/scripts/config',
     'fastclick',
     'lib/utils',
-    'modules/common'
+    'common/scripts/modules/common'
 ], function (angular, config, Fastclick, utils) {
     'use strict';
 
